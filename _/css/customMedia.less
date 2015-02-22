@@ -1,0 +1,61 @@
+/*		INDEX
+
+8		import external files
+10		template	style		
+
+
+		*/
+
+.wrapper{.mxW(1300px); margin:0 auto !important; box-shadow:0 0 1em hsla(0, 0%, 0%, 1.0); -webkit-box-shadow:0 0 1em hsla(0, 0%, 0%, 1.0); 	}
+
+.w20{.w(20%); .f; } .w25{.w(25%); .f; } .w33{ .w(33%); .f; } .w50{ .w(50%); .f; }
+
+div.wTh p, div.wO p{ .p(@globalPad); }
+
+.jqm-demos .jqm-list .ui-btn, .jqm-demos .jqm-list .ui-btn:visited, .jqm-demos .jqm-list .ui-li-divider{padding-left:1em !important;}
+.jqm-demos .jqm-header h2 img{height:50px; }
+.jqm-navmenu-panel{  a{ border:0px solid #eee !important; } ul.jqm-list{ }
+	ul.jqm-list li:hover a{ .fs(1em); }
+}
+
+.media-object{.mxW(50px);}
+
+.os{overflow:visible; }
+.cb{clear:both; clear:right; clear:left;}
+.center-all{float:none !important; margin-left:auto !important; margin-right:auto !important;clear:both; }
+
+@media screen and (min-width: 0px) and (max-width:480px) { 
+	.center-rc{float:none !important; margin-left:auto !important; margin-right:auto !important; clear:both; }
+	.center-xs{float:left !important; }
+	.center-sm{float:left !important; }
+	.center-md{float:left !important; }
+	.center-lg{float:left !important; }
+}
+@media screen and (min-width: 480px) and (max-width:768px) { 
+	.center-rc{float:left !important; }
+	.center-xs{float:none !important; margin-left:auto !important; margin-right:auto !important; clear:both;}
+	.center-sm{float:left !important; }
+	.center-md{float:left !important; }
+	.center-lg{float:left !important; }
+}
+@media screen and (min-width: 768px) and (max-width:992px) { 
+	.center-rc{float:left !important; }
+	.center-xs{float:left !important; }
+	.center-sm{float:none !important; margin-left:auto !important; margin-right:auto !important;clear:both; }
+	.center-md{float:left !important; }
+	.center-lg{float:left !important; }
+}
+@media screen and (min-width: 992px) and (max-width:1200px) { 
+	.center-rc{float:left !important; }
+	.center-xs{float:left !important; }
+	.center-sm{float:left !important; }
+	.center-md{float:none !important; margin-left:auto !important; margin-right:auto !important; clear:both;}
+	.center-lg{float:left !important; }
+}
+@media screen and (min-width: 1200px) { 
+	.center-rc{float:left !important; }
+	.center-xs{float:left !important; }
+	.center-sm{float:left !important; }
+	.center-md{float:left !important; }
+	.center-lg{ float:none !important; margin-left:auto !important; margin-right:auto !important; clear:both; }
+}

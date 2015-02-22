@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>onMediaQuery - Responsive JS</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="_/css/normalize.css" />
+		<!-- browser reset included here -->
+		<link rel="stylesheet" href="_/css/main.css" />
+		<!-- special reset for chrome browsers here -->
+		<link rel="stylesheet" type="text/css" href="_/css/jquery.mobile-1.4.0.min.css" />
+		<!-- Bootstrap core CSS 	-->
+		<link href="_/css/customBootstrap.min.css"" type="text/css" rel="stylesheet" />
+		<link href="_/css/grid.css"" type="text/css" rel="stylesheet" />
+		<script src="_/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <style>html { font-family: 'mobile';} * html { /* IE6 */font-family: 'desktop'} *+html { /* IE7 */ font-family: 'desktop'} @media \0screen { html {  /* IE8 */ font-family: 'desktop' }} @media screen and (min-width: 35em) { html { font-family: "skinny"; } } @media screen and (min-width: 56em) { html { font-family: "desktop"; } }
+		</style>
+        
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+<div data-role="page" class="wraper jqm-demos" data-quicklinks="true">
+    <div class="container"> <!-- <div class="container-fluid"> -->
+		
+    </div> 
+    <h3 id='ie_test'></h3>
+</div>
+		<script src="_/js/vendor/jquery-1.9.1.min.js"></script>
+		<!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	-->
+		<script>window.jQuery || document.write('<script src="_/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		
+		<script src="_/js/vendor/bootstrap.min.js"></script>
+        
+		<link rel="stylesheet/less" href="_/css/cs.less" type="text/css">
+		<!-- your custom lesss css here -->
+		<script src="_/js/vendor/less.js"></script>
+		<link rel="stylesheet" href="_/css/cs.css">
+		<!-- your custom css here -->
+		<script src="_/js/plugins.js"></script><!-- plugin.js is your custom js use anyway you like in jQ  -->
+		<script src="_/js/main.js"></script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+                
+        <!-- Scripts -->
+        <script id="responder" type="text/javascript" src="_/js/vendor/onmediaquery.min.js"></script>
+        <script language='javascript'>
+			var ie, t, n;
+			
+			queries = [
+				{
+					context: 'mobile',
+					match: function() {
+						ie.innerHTML = 'mobile';
+						console.log('in mobile!');
+					},
+					unmatch: function(){
+						console.log('out mobile!');
+					}
+				},
+				{
+					context: 'skinny',
+					match: function() {
+						console.log('in skinny!');
+						ie.innerHTML = 'skinny';
+					},
+					unmatch: function(){
+						console.log('out skinny!');
+					}
+				},
+				{
+					context: ['mobile', 'skinny'],
+					call_for_each_context: false,
+					match: function() {
+						console.log('a callback which spans multiple breakpoints, skinny and mobile!');
+						// setting 'call_for_each_context' to false means this callback will only fire once across this range of breakpoints
+					},
+					unmatch: function() {
+						console.log('leaving small context!');
+					}
+				},
+				{
+					context: 'desktop',
+					match: function() {
+						console.log('in desktop!');
+						ie.innerHTML = 'desktop';
+					},
+					unmatch: function(){
+						console.log('out desktop!');
+					}
+				}
+			];
+			
+			window.onload = function() {
+				ie = document.getElementById('ie_test');
+				MQ.init(queries);
+				
+				var my_query = MQ.addQuery({
+					context: ['skinny'],
+					match: function() { 
+						console.log( 'second skinny callback!' )
+					}
+				});
+				
+				//Add a media query test
+				var my_query = MQ.addQuery({
+					context: 'skinny', 
+					match: function() { 
+						console.log( 'second skinny callback!' )
+					}
+				});
+				var callbacklen = MQ.callbacks.length;
+				//Remove a media query test by reference
+				MQ.removeQuery( my_query );
+				if(callbacklen - MQ.callbacks.length === 1){
+					console.log("RemoveQuery test success");
+				}else{
+					console.log("RemoveQuery test failture");
+				}
+			}
+        </script> 
+		<!-- End scripts -->
+		<script>
+			var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']]; ( function(d, t) {
+				var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+				g.src = '//www.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g, s)
+			}(document, 'script'));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>j-codeSnippets</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.css" />
+		-->
+		<link rel="stylesheet" type="text/css" href="_/css/jquery.mobile-1.4.0.min.css">
+		<link rel="stylesheet" href="_/css/normalize.css">
+		<!-- browser reset included here -->
+		<link rel="stylesheet" href="_/css/main.css">
+		<!-- special reset for chrome browsers here -->
+		<script src="_/js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<!-- Add your site or application content here -->
+		<div data-role="page" class="wraper jqm-demos" data-quicklinks="true">
+			<div data-role="header" class="ui-grid-c">
+				<div class="ui-block-a">
+					<a href="index.html"><img src="img/demo/1 (6).jpg" alt="jQuery Mobile"></a>
+				</div>
+				<div class="ui-block-b">
+					<a href="index.html"><img src="img/demo/1 (2).jpg" alt="jQuery Mobile"></a>
+				</div>
+				<div class="ui-block-c">
+					<a href="index.html"><img src="img/demo/1 (3).jpg" alt="jQuery Mobile"></a>
+				</div>
+				<div class="ui-block-d">
+					<a href="index.html"><img src="img/demo/1 (4).jpg" alt="jQuery Mobile"></a>
+				</div>
+			</div>
+			<div class="">
+				<p>
+					Hello world! This is HTML5 Boilerplate.
+				</p>
+			</div>
+			<div class="ui-grid-c">
+				<div class="ui-block-a">
+					<div class="ui-bar ui-bar-a" style="height:60px">
+						Block A
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div class="ui-bar ui-bar-a" style="height:60px">
+						Block B
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div class="ui-bar ui-bar-a" style="height:60px">
+						Block C
+					</div>
+				</div>
+				<div class="ui-block-d">
+					<div class="ui-bar ui-bar-a" style="height:60px">
+						Block D
+					</div>
+				</div>
+			</div><!-- /grid-c -->
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+					<input type="submit" value="Submit" data-theme="a">
+				</div>
+				<div class="ui-block-b">
+					<input type="reset" value="Reset" data-theme="b">
+				</div>
+			</fieldset>
+			<div class="ui-grid-solo">
+				<div class="ui-block-a">
+					<input type="button" value="More">
+				</div>
+			</div>
+			<div data-role="collapsible-set" data-theme="a" data-content-theme="a" data-iconpos="right">
+				<div data-role="collapsible">
+					<h3>Right</h3>
+					<p>
+						Inherits icon positioning from <code>
+							data-iconpos="right"</code>
+						attribute on set.
+					</p>
+				</div>
+				<div data-role="collapsible" data-iconpos="left">
+					<h3>Left</h3>
+					<p>
+						Set via <code>
+							data-iconpos="left"</code>
+						attribute on the collapsible
+					</p>
+				</div>
+				<div data-role="collapsible" data-iconpos="bottom">
+					<h3>Bottom</h3>
+					<p>
+						Set via <code>
+							data-iconpos="bottom"</code>
+						attribute on the collapsible
+					</p>
+				</div>
+				<div data-role="collapsible" data-iconpos="top">
+					<h3>Top</h3>
+					<p>
+						Set via <code>
+							data-iconpos="top"</code>
+						attribute on the collapsible
+					</p>
+				</div>
+			</div>
+			<form>
+				<label>
+					<input type="checkbox" name="checkbox-0 ">
+					Check me </label>
+			</form>
+			<div data-role="collapsible" data-inset="false">
+				<h3>Pets</h3>
+				<ul data-role="listview">
+					<li>
+						<a href="#">Canary</a>
+					</li>
+					<li>
+						<a href="#">Cat</a>
+					</li>
+					<li>
+						<a href="#">Dog</a>
+					</li>
+					<li>
+						<a href="#">Gerbil</a>
+					</li>
+					<li>
+						<a href="#">Iguana</a>
+					</li>
+					<li>
+						<a href="#">Mouse</a>
+					</li>
+				</ul>
+			</div><!-- /collapsible -->
+			<div data-role="collapsible" data-inset="false">
+				<h3>Farm animals</h3>
+				<ul data-role="listview">
+					<li>
+						<a href="#">Chicken</a>
+					</li>
+					<li>
+						<a href="#">Cow</a>
+					</li>
+					<li>
+						<a href="#">Duck</a>
+					</li>
+					<li>
+						<a href="#">Horse</a>
+					</li>
+					<li>
+						<a href="#">Pig</a>
+					</li>
+					<li>
+						<a href="#">Sheep</a>
+					</li>
+				</ul>
+			</div><!-- /collapsible -->
+			<div data-role="collapsible" data-inset="false">
+				<h3>Wild Animals</h3>
+				<ul data-role="listview">
+					<li>
+						<a href="#">Aardvark</a>
+					</li>
+					<li>
+						<a href="#">Alligator</a>
+					</li>
+					<li>
+						<a href="#">Ant</a>
+					</li>
+					<li>
+						<a href="#">Bear</a>
+					</li>
+					<li>
+						<a href="#">Beaver</a>
+					</li>
+					<li>
+						<a href="#">Cougar</a>
+					</li>
+					<li>
+						<a href="#">Dingo</a>
+					</li>
+				</ul>
+			</div><!-- /collapsible -->
+			<form>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+					<legend>
+						Horizontal:
+					</legend>
+					<label for="select-h-2a">Select A</label>
+					<select name="select-h-2a" id="select-h-2a">
+						<option value="#">One</option>
+						<option value="#">Two</option>
+						<option value="#">Three</option>
+					</select>
+					<label for="select-h-2b">Select B</label>
+					<select name="select-h-2b" id="select-h-2b">
+						<option value="#">One</option>
+						<option value="#">Two</option>
+						<option value="#">Three</option>
+					</select>
+					<label for="select-h-2c">Select C</label>
+					<select name="select-h-2c" id="select-h-2c">
+						<option value="#">One</option>
+						<option value="#">Two</option>
+						<option value="#">Three</option>
+					</select>
+				</fieldset>
+			</form>
+			<form>
+				<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<legend>
+						Horizontal, mini sized:
+					</legend>
+					<label for="select-h-6a">Select A</label>
+					<select name="select-h-6a" id="select-h-6a">
+						<option value="#">One</option>
+						<option value="#">Two</option>
+						<option value="#">Three</option>
+					</select>
+					<label for="select-h-6b">Select B</label>
+					<select name="select-h-6b" id="select-h-6b">
+						<option value="#">One</option>
+						<option value="#">Two</option>
+						<option value="#">Three</option>
+					</select>
+					<label for="select-h-6c">Select C</label>
+					<select name="select-h-6c" id="select-h-6c">
+						<option value="#">One</option>
+						<option value="#">Two</option>
+						<option value="#">Three</option>
+					</select>
+				</fieldset>
+			</form>
+			<form class="ui-filterable">
+				<input id="filterBasic-input" data-type="search">
+			</form>
+			<ul data-role="listview" data-filter="true" data-input="#filterBasic-input">
+				<li>
+					Acura
+				</li>
+				<li>
+					Audi
+				</li>
+				<li>
+					BMW
+				</li>
+				<li>
+					Cadillac
+				</li>
+				<li>
+					Ferrari
+				</li>
+			</ul>
+			<form>
+				<input id="filterTable-input" data-type="search">
+			</form>
+			<table data-role="table" id="movie-table" data-filter="true" data-input="#filterTable-input" class="ui-responsive">
+				<thead>
+					<tr>
+						<th data-priority="1">Rank</th>
+						<th data-priority="persist">Movie Title</th>
+						<th data-priority="2">Year</th>
+						<th data-priority="3"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+						<th data-priority="4">Reviews</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
+						<td>1941</td>
+						<td>100%</td>
+						<td>74</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
+						<td>1942</td>
+						<td>97%</td>
+						<td>64</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">The Godfather</a></td>
+						<td>1972</td>
+						<td>97%</td>
+						<td>87</td>
+					</tr>
+				</tbody>
+			</table>
+			<form>
+				<input data-type="search" id="divOfPs-input">
+			</form>
+			<div class="elements" data-filter="true" data-input="#divOfPs-input">
+				<p>
+					<strong>These</strong> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+				</p>
+				<p>
+					<strong>tags</strong> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+				</p>
+				<p>
+					<strong>Tags</strong> erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+				</p>
+				<p>
+					<strong>are</strong> et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+				</p>
+				<p>
+					<strong>Filterable</strong> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+				</p>
+			</div>
+			<div class="ui-corner-all custom-corners">
+				<div class="ui-bar ui-bar-a">
+					<h3>Heading</h3>
+				</div>
+				<div class="ui-body ui-body-a">
+					<p>
+						Content
+					</p>
+				</div>
+			</div>
+			<ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+				<li>
+					<a href="index.html">Adam Kinkaid</a>
+				</li>
+				<li>
+					<a href="index.html">Alex Wickerham</a>
+				</li>
+				<li>
+					<a href="index.html">Avery Johnson</a>
+				</li>
+				<li>
+					<a href="index.html">Bob Cabot</a>
+				</li>
+				<li>
+					<a href="index.html">Caleb Booth</a>
+				</li>
+				<li>
+					<a href="index.html">Christopher Adams</a>
+				</li>
+				<li>
+					<a href="index.html">Culver James</a>
+				</li>
+			</ul>
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#" class="ui-btn-active">One</a>
+					</li>
+					<li>
+						<a href="#">Two</a>
+					</li>
+					<li>
+						<a href="#">Three</a>
+					</li>
+					<li>
+						<a href="#">Four</a>
+					</li>
+					<li>
+						<a href="#">Five</a>
+					</li>
+				</ul>
+			</div><!-- /navbar -->
+			<div data-role="footer" class="nav-glyphish-example" data-theme="b">
+				<div data-role="navbar" class="nav-glyphish-example" data-grid="d">
+					<ul>
+						<li>
+							<a href="#" id="chat" data-icon="custom">Chat</a>
+						</li>
+						<li>
+							<a href="#" id="email" data-icon="custom">Email</a>
+						</li>
+						<li>
+							<a href="#" id="skull" data-icon="custom">Danger</a>
+						</li>
+						<li>
+							<a href="#" id="beer" data-icon="custom">Beer</a>
+						</li>
+						<li>
+							<a href="#" id="coffee" data-icon="custom">Coffee</a>
+						</li>
+					</ul>
+				</div>
+				<style>
+.nav-glyphish-example .ui-btn { padding-top: 40px !important; }
+.nav-glyphish-example .ui-btn:after { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+#chat:after { background:  url(_/css/i/glyphish-icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }
+#email:after { background:  url(_/css/i/glyphish-icons/18-envelope.png) 50% 50% no-repeat; background-size: 24px 16px;  }
+#login:after { background:  url(_/css/i/glyphish-icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
+#beer:after { background:  url(_/css/i/glyphish-icons/88-beermug.png) 50% 50% no-repeat;  background-size: 22px 27px; }
+#coffee:after { background:  url(_/css/i/glyphish-icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
+#skull:after { background:  url(_/css/i/glyphish-icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+				</style>
+			</div>
+			<p>
+				This will result in a bottom icon alignment:
+			</p>
+			<div data-role="footer">
+				<div data-role="navbar" data-iconpos="bottom">
+					<ul>
+						<li>
+							<a href="#" data-icon="grid">Summary</a>
+						</li>
+						<li>
+							<a href="#" data-icon="star" class="ui-btn-active">Favs</a>
+						</li>
+						<li>
+							<a href="#" data-icon="gear">Setup</a>
+						</li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+			<a href="#transitionExample" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">No transition</a>
+			<a href="#transitionExample" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Pop</a>
+			<a href="#transitionExample" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Fade</a>
+			<a href="#transitionExample" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Flip</a>
+			<a href="#transitionExample" data-transition="turn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Turn</a>
+			<a href="#transitionExample" data-transition="flow" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Flow</a>
+			<a href="#transitionExample" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide</a>
+			<a href="#transitionExample" data-transition="slidefade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slidefade</a>
+			<a href="#transitionExample" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide up</a>
+			<a href="#transitionExample" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide down</a>
+			<div data-role="popup" id="transitionExample" class="ui-content" data-theme="a">
+				<p>
+					I'm a simple popup.
+				</p>
+			</div>
+			<a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/demo/1 (1).jpg" alt="Paris, France" style="width:30%"></a>
+			<a href="#popupSydney" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/demo/1 (2).jpg" alt="Sydney, Australia" style="width:30%"></a>
+			<a href="#popupNYC" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/demo/1 (3).jpg" alt="New York, USA" style="width:30%"></a>
+			<div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/demo/1 (1).jpg" style="max-height:512px;" alt="Paris, France">
+			</div>
+			<div data-role="popup" id="popupSydney" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/demo/1 (2).jpg" style="max-height:512px;" alt="Sydney, Australia">
+			</div>
+			<div data-role="popup" id="popupNYC" data-overlay-theme="b" data-theme="b" data-corners="false">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="img/demo/1 (3).jpg" style="max-height:512px;" alt="New York, USA">
+			</div>
+			<form>
+				<label for="slider-1">Slider with tooltip:</label>
+				<input type="range" name="slider-1" id="slider-1" min="0" max="100" value="50" data-popup-enabled="true">
+				<label for="slider-2">Slider showing value on button:</label>
+				<input type="range" name="slider-2" id="slider-2" min="0" max="100" value="50" data-show-value="true">
+				<label for="slider-3">Both options together:</label>
+				<input type="range" name="slider-3" id="slider-3" min="0" max="100" value="50" data-show-value="true" data-popup-enabled="true">
+				<label for="slider-3">Both options together (mini):</label>
+				<input type="range" name="slider-3" id="slider-3" min="0" max="100" value="50" data-show-value="true" data-popup-enabled="true" data-mini="true">
+			</form>
+			<div data-role="tabs" id="tabs">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#one" data-ajax="false">one</a>
+						</li>
+						<li>
+							<a href="#two" data-ajax="false">two</a>
+						</li>
+						<li>
+							<a href="ajax-content.html" data-ajax="false">three</a>
+						</li>
+					</ul>
+				</div>
+				<div id="one" class="ui-body-d ui-content">
+					<h1>First tab contents</h1>
+				</div>
+				<div id="two">
+					<ul data-role="listview" data-inset="true">
+						<li>
+							<a href="#">Acura</a>
+						</li>
+						<li>
+							<a href="#">Audi</a>
+						</li>
+						<li>
+							<a href="#">BMW</a>
+						</li>
+						<li>
+							<a href="#">Cadillac</a>
+						</li>
+						<li>
+							<a href="#">Ferrari</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h2>Use inset listview for tabs</h2>
+			<div data-role="tabs">
+				<ul data-role="listview" data-inset="true" class="tablist-left">
+					<li>
+						<a href="#one" data-ajax="false">one</a>
+					</li>
+					<li>
+						<a href="#two" data-ajax="false">two</a>
+					</li>
+					<li>
+						<a href="ajax-content.html" data-ajax="false">three</a>
+					</li>
+				</ul>
+				<div id="one" class="ui-body-d tablist-content">
+					<h1>First tab contents</h1>
+				</div>
+				<ul id="two" class="tablist-content" data-role="listview" data-inset="true">
+					<li>
+						<a href="#">Acura</a>
+					</li>
+					<li>
+						<a href="#">Audi</a>
+					</li>
+					<li>
+						<a href="#">BMW</a>
+					</li>
+					<li>
+						<a href="#">Cadillac</a>
+					</li>
+					<li>
+						<a href="#">Ferrari</a>
+					</li>
+				</ul>
+				<style>
+					.tablist-left {
+						width: 25%;
+						display: inline-block;
+					}
+					.tablist-content {
+						width: 60%;
+						display: inline-block;
+						vertical-align: top;
+						margin-left: 5%;
+					}
+				</style>
+			</div>
+			<form>
+				<label for="date-1">Date: data-clear-btn="false"</label>
+				<input type="date" data-clear-btn="false" name="date-1" id="date-1" value="">
+				<label for="date-2">Date: data-clear-btn="true"</label>
+				<input type="date" data-clear-btn="true" name="date-2" id="date-2" value="">
+			</form>
+			<form>
+				<label for="color-2">Color: data-clear-btn="true"</label>
+				<input type="color" data-clear-btn="true" name="color-2" id="color-2" value="">
+			</form>
+			<div data-role="header">
+				<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+					<a href="#" class="ui-btn ui-btn-icon-right ui-icon-plus">Add</a>
+					<a href="#" class="ui-btn ui-btn-icon-right ui-icon-arrow-u">Up</a>
+					<a href="#" class="ui-btn ui-btn-icon-right ui-icon-arrow-d">Down</a>
+				</div>
+				<h6>My header</h6>
+			</div>
+			<table margin="0">
+				<tbody>
+					<tr>
+						<th><h3>fade</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>pop</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>flip</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>turn</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="turn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="turn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>flow</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="flow" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="flow" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>slidefade</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="slidefade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="slidefade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>slide</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>slideup</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>slidedown</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="slidedown" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+					<tr>
+						<th><h3>none</h3></th>
+						<td><a href="page-transitions-dialog.html" data-rel="dialog" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">dialog</a></td>
+						<td><a href="page-transitions-page.html" data-transition="none" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">page</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<style>
+				table {
+					width: 100%;
+					border-spacing: 0;
+				}
+				th {
+					text-align: left;
+				}
+				th h3 {
+					margin: .6em 0 .6em .5em;
+				}
+				th, td {
+					vertical-align: top;
+					border-top: 1px solid #eee;
+					padding: 1px 3px;
+					background-color: #fcfcfc;
+				}
+				td .ui-btn {
+					margin: .4em 0 .5em 0;
+				}
+				td .ui-btn-inner {
+					padding: .4em 15px;
+				}
+			</style>
+			<a href="index.html" data-transition="pop">I'll pop</a>
+			When the Back button is pressed, the framework will automatically apply the reverse version of the transition that was used to show the page. To specify that the reverse version of a transition should be used, add the data-direction="reverse" attribute to a link. <a href="index.html" data-transition="reverse">Back</a>
+		</div><!-- wraper ends here -->
+		<!-- 	<script src="http://code.jquery.com/jquery-[version].min.js"></script>
+		<script src="http://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.js"></script>		-->
+		<script src="_/js/vendor/jquery-1.9.1.min.js"></script>
+		<!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	-->
+		<script>window.jQuery || document.write('<script src="_/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		<script src="_/js/vendor/jquery.mobile-1.4.0.min.js"></script>
+		<link rel="stylesheet/less" href="_/css/cs.less" type="text/css">
+		<!-- your custom lesss css here -->
+		<script src="_/js/vendor/less.js"></script>
+		<link rel="stylesheet" href="_/css/cs.css">
+		<!-- your custom css here -->
+		<script src="_/js/plugins.js"></script><!-- plugin.js is your custom js use anyway you like in jQ  -->
+		<script src="_/js/main.js"></script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']]; ( function(d, t) {
+				var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+				g.src = '//www.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g, s)
+			}(document, 'script'));
+
+		</script>
+	</body>
+</html>
