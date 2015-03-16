@@ -18,11 +18,15 @@
         <!-- browser reset included here -->
         <link rel="stylesheet" href="_/css/main.css" />
         <!-- special reset for chrome browsers here -->
-        <link rel="stylesheet" type="text/css" href="_/css/jquery.mobile-1.4.0.min.css" />
-        <link rel="stylesheet" type="text/css" href="_/css/jqm-demos.css" />
+        
+        
+        <!--     -->
+        
         <!-- Bootstrap core CSS 	-->
         <link href="_/css/bootstrap.min.css"" type="text/css" rel="stylesheet" />
+        <!--
         <link href="_/css/bootstrap-theme.min.css"" type="text/css" rel="stylesheet" />
+        -->
         <!-- Custom styles for this template -->
         <link href="_/css/grid.css"" type="text/css" rel="stylesheet" />
 
